@@ -13,7 +13,7 @@ Il a été réalisé avec :
 
 #### Installation
 
-Pour pouvoir visualisé le site web, merci de le télécharger et de l'extraire.
+Pour pouvoir visualisé le site web, merci de le [télécharger](https://github.com/KingTT4/Resto-Yolo/releases/tag/v1.0) et de l'extraire.
 
 ## EN :us:
 
@@ -26,4 +26,4 @@ It was realized with :
 
 #### Installation
 
-In order to view the website, please download and extract it.
+In order to view the website, please [download](https://github.com/KingTT4/Resto-Yolo/releases/tag/v1.0) and extract it.
