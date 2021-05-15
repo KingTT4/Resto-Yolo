@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../Image/Background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1, p, a {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Titre & Menu de la page */
+.banner {
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(75, 75, 75, 0.7);
+}
+
+.banner h1 {
+    font-size: 55px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.banner .menu {
+    border: 2px solid black;
+    background-color: white;
+}
+
+.menu a {
+    padding: 0px 20px;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:nth-child(4) {
+    border-right: none;
+}
+
+.menu a:hover:not(.active) {
+    text-decoration: underline;
+    color: red;
+}
+
+.menu .active {
+    border-right: 2px solid black;
+    background-color: green;
+    color: white;
+}
+
+/* Contenu de la page */
+main {
+    margin: 0% 10%;
+    padding: 10px 10px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.content {
+    margin: 2% 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    background-color: darkgray;
+}
+
+.slogan p {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.content img {
+    width: 20%;
+    background-color: white;
+}
+
+/* Pied-de-page */
+footer {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 0px;
+    height: 30px;
+    background-color: rgba(75, 75, 75, 0.7);
+}
+
+footer .footer-text {
+    margin: 10px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .banner .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu .active {
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+
+    .content {
+        margin: 2% 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid black;
+        background-color: darkgray;
+    }
+
+    .content img {
+        width: 100%;
+	height: 300px;
+    }    
+}

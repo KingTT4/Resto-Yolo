@@ -1,0 +1,192 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../Image/Background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1, a, .active, #search , .description, .footer-text{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Titre & Menu de la page */
+.banner {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(75, 75, 75, 0.7);
+}
+
+.banner h1 {
+    font-size: 55px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.banner .menu {
+    border: 2px solid black;
+    background-color: white;
+}
+
+.menu a {
+    padding: 0px 20px;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:nth-child(4) {
+    border-right: none;
+}
+
+.menu a:hover:not(.active) {
+    text-decoration: underline;
+    color: red;
+}
+
+.menu .active {
+    border-right: 2px solid black;
+    background-color: green;
+    color: white;
+}
+
+/* Barre de recherche */
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar #search {
+    width: 100%;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.search-bar .submit-search {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.search-bar .submit-search:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/* Contenu de la page */
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10%;
+    padding: 10px 10px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.item {
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    border: 2px solid black;
+}
+
+.item img {
+    width: 640px;
+}
+
+.information {
+    width: 100%;
+    background-color: darkgray;
+}
+
+.information h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.information .description {
+    text-align: center;
+    font-size: 20px;
+}
+
+.information .price {
+    margin-top: 25px;
+    padding: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px white;
+    font-size: 30px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.panier {
+    border: 2px solid black;
+    border-top: none;
+}
+
+.panier:hover {
+    background-color: rgba(0, 120, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Pied-de-page */
+footer {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 0px;
+    height: 30px;
+    background-color: rgba(75, 75, 75, 0.7);
+}
+
+footer .footer-text {
+    margin: 10px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .banner .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu .active {
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+
+    .search-bar #search {
+        margin: 0px 10px;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .item img {
+        width: auto;
+        height: auto;
+    }
+}

@@ -1,6 +1,6 @@
 ## Captures d'écran
 
-![Image 000](Image000.png)
+![Image 000](Screenshoots/Image000.png)
 
 ## FR :fr:
 
