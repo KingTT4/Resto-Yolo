@@ -5,7 +5,7 @@
 ## FR :fr:
 
 Pour ce projet personnel, j'ai voulu créer un site web dit responsive, c'est-à-dire adaptable sur tout support numérique (Ordinateur, Mobile, Tablette,  etc).
-J'ai intitulé ce projet sous le nom de **Resto-Yolo**.
+J'ai intitulé ce projet sous le nom de **Resto Yolo**.
 
 Technologies utilisées :
 
